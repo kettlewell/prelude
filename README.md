@@ -1,10 +1,16 @@
 [![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
-[![Gratipay Team](https://img.shields.io/gratipay/team/prelude.svg?maxAge=2592000)](https://gratipay.com/prelude/)
+
+
 
 Emacs Prelude
 =============
+**PERSONAL FORK**
+These changes are my own fork of the Prelude Emacs repository.
+----
+---
+--
 
-[![Join the chat at https://gitter.im/bbatsov/prelude](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bbatsov/prelude?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Prelude is an Emacs distribution that aims to enhance the default
 Emacs experience.  Prelude alters a lot of the default settings,
@@ -17,11 +23,6 @@ Prelude is compatible **ONLY with GNU Emacs 24.4+**. In general you're
 advised to always run Prelude with the latest Emacs - currently
 **25.1**.
 
-You can support the development of Prelude via
-[Salt](https://bountysource.com/teams/prelude) and
-[Gratipay](https://www.gratipay.com/prelude).
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png)](https://gratipay.com/prelude)
 
 **Table of Contents**
 
@@ -76,7 +77,7 @@ can skip the whole manual and just type in your favorite shell the
 following command:
 
 ```bash
-curl -L https://git.io/epre | sh
+curl -L https://github.com/kettlewell/raw/master/utils/installer.sh | sh
 ```
 
 You can now power up your Emacs, sit back and enjoy Prelude,
@@ -87,13 +88,13 @@ source repository and the installation directory. To change the
 installation directory:
 
 ```bash
-export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/kettlewell/prelude/raw/master/utils/installer.sh | sh
 ```
 
 To change the source repository:
 
 ```bash
-export PRELUDE_URL="https://github.com/yourname/prelude.git" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+export PRELUDE_URL="https://github.com/yourname/prelude.git" && curl -L https://github.com/kettlewell/prelude/raw/master/utils/installer.sh | sh
 ```
 
 Note that the installer will back up any existing `.emacs` file or
@@ -123,7 +124,7 @@ You can install **Emacs Prelude** via the command line with either `curl` or
 If you're using `curl` type the following command:
 
 ```bash
-curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+curl -L https://github.com/kettlewell/prelude/raw/master/utils/installer.sh | sh
 ```
 
 #### Via Wget
@@ -131,13 +132,13 @@ curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 If you're using `wget` type:
 
 ```bash
-wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+wget --no-check-certificate https://github.com/kettlewell/prelude/raw/master/utils/installer.sh -O - | sh
 ```
 
 ### Manual
 
 ```bash
-git clone git://github.com/bbatsov/prelude.git path/to/local/repo
+git clone git://github.com/kettlewell/prelude.git path/to/local/repo
 ln -s path/to/local/repo ~/.emacs.d
 cd ~/.emacs.d
 ```
