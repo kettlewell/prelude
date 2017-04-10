@@ -13,4 +13,22 @@
   ;; (setq right-margin-width 1)
   (setq left-fringe-width 25)
   (setq right-fringe-width 25)
-  )
+)
+
+(add-hook 'text-mode-hook 'set-my-margins)
+(add-hook 'prog-mode-hook 'set-my-margins)
+
+(add-hook 'prog-mode-hook
+          (lambda () (setq prettify-symbols-alist
+                           '(
+                             ("=>" . ?⇒)
+                             ("<-" . ?←)
+                             ("->" . ?→)
+                             ("<<<" . ?⋘)
+                             (">>>" . ?⋙)
+                             ("lambda" . ?λ)
+                             ("function" . ?λ)
+                             ))))
+
+
+(global-prettify-symbols-mode t)
